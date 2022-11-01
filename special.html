@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SINoALICE｜ギルド【Soul-Eat】</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここは、まったりギルドSoulの隠れ家。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html">SINoALICE｜ギルド【Soul-Eat】</a></h1>
+</header>
+
+<!--メインメニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="company.html">COMPANY</a></li>
+<li><a href="service.html">SERVICE</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="special.html">SPECIAL</a></li>
+
+</ul>
+</nav>
+
+<h1 class="rTitle">カップラーメン ガチャシミュレーション</h1>
+        
+<div class="image" id="image">
+    <video id="movie" autoplay muted playsinline src="images/ra-men.mp4"></video>
+
+</div>
+
+
+
+<div class="btn">
+    <button id="gacha-button">
+        ガチャる
+    </button>
+</div>
+
+
+<script>
+
+    "use strict";
+
+    // const imgee =document.querySelector("#images");
+    // imgee.src ="images/ra~men.jpg";
+
+    
+    const ra_men = [
+         "日清ラ王 濃厚味噌",
+         "日清ラ王 背脂醤油",
+         "マルちゃん正麺  芳醇こく醤油",
+         "マルちゃん 麺づくり 味噌",
+         "マルちゃん 麺づくり 鶏だし塩",
+         "マルちゃん 麺づくり 鶏ガラ醤油",
+         "日清食品カップヌードル",
+         "日清食品カップヌードル カレー",
+         "横浜発祥サンマー麺",
+         "一風堂 赤丸新味 博多とんこつ"
+    ];
+
+    const btn = document.getElementById("gacha-button");
+    const disp = document.getElementById("image");
+
+    btn.addEventListener("click", function() {
+      const num = Math.floor(Math.random() * ra_men.length );
+      disp.innerHTML = ra_men[num];
+    });
+
+</script>

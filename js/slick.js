@@ -5,7 +5,7 @@
 		autoplay: true,
 		dots: true,				//丸いページナビボタンを表示
 		arrows: false,			//左右の矢印
-		autoplaySpeed: 6000,	//切り替えのスピード。デフォルトは3000。
+		autoplaySpeed: 5000,	//切り替えのスピード。デフォルトは3000。
 		pauseOnHover: false,	//マウスオン時にスライドショーをストップする
         
         centerMode: true,

@@ -364,7 +364,64 @@ ul.icon img:hover {
 .look {display: inline-block;border: 1px solid #dfd4b7;padding: 5px 20px;background: rgba(0,0,0,0.03);border-radius: 5px;margin: 5px 0;}
 .ofx {overflow-x: hidden;}
 
+div.image video {
+	height: auto;
+	width: 60%;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
 
+div.btn {
+	text-align: center;
+  }
+div.btn #gacha-button {
+	margin-top: 40px;
+	margin-bottom: 3rem;
+	letter-spacing: 1.5px;
+	font-size: 24px;
+	padding: 5.6px;
+}
+
+h1.rTitle{
+	font-size: 32px;
+	text-align: center;
+}
+@media screen and (max-width:600px) {
+	h1.rTitle{
+		font-size: 8px;
+		text-align: center;
+	}
+
+}
+h1.rTitle::before {
+	content: "🍜";
+	margin-left: 8px;
+	margin-right: 8px;
+}
+h1.rTitle::after {
+	content: "🍜";
+	margin-left: 8px;
+	margin-right: 8px;
+}
+div.image {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 8px 0 8px 0;
+	min-height: 3rem;
+	font-size: 80px;
+	color: rgb(223, 45, 45);
+	text-align: center;
+	border-top: dotted 2.5px;
+	border-bottom: dotted 2.5px;
+	-webkit-animation: fadeIn 3s;
+			animation: fadeIn 3s;
+  }
+@media screen and (max-width:600px) {
+  	div.image{
+		font-size: 24px;
+	}
+}
 
 /*---------------------------------------------------------------------------
 ここから下は画面幅600px以上の追加指定
@@ -390,6 +447,7 @@ ul.icon img:hover {
 	float: left;		/*画像を左に回り込みさせる*/
 	margin-right: 20px;	/*画像と、右側のテキストとの間に空けるスペース*/
 }
+
 
 /*　※注意！　下の閉じカッコ　}　は600px以上の設定に必要なので、うっかり削除しないように。　*/
 
@@ -454,6 +512,9 @@ main {
 ---------------------------------------------------------------------------*/
 .ws {width: 45%;display: inline-block;}
 
+
 /*　※注意！　下の閉じカッコ　}　は800px以上の設定に必要なので、うっかり削除しないように。　*/
 
 }
+
+
